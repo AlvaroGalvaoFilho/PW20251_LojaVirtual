@@ -19,7 +19,7 @@ SET nome = ?, cpf = ?, telefone = ?, email = ?, data_nascimento = ?
 WHERE id = ?;
 """
 
-DELTE_CLIENTE="""
+DELETE_CLIENTE="""
 DELETE FROM Cliente 
 WHERE id = ?;
 """
@@ -30,7 +30,7 @@ FROM Cliente
 WHERE id = ?;
 """
 
-GET_CLIENTE_BY_PAGE="""
+GET_CLIENTES_BY_PAGE="""
 SELECT id, nome, cpf, telefone, email, data_nascimento
 FROM Cliente
 ORDER BY nome ASC
