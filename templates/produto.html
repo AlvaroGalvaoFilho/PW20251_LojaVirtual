@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% block conteudo %}
+{% set titulo_pagina = "Detalhes de produto <b>" + produto.nome %}
+{% block conteudo + "</b>" %}
 <div class="row">
     <div class="col-md-3 mb-3">
         <img src="{{produto.imagem}}" class="img-thumbnail rounded" alt="{{produto.nome}}">
