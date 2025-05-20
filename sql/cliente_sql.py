@@ -2,7 +2,7 @@ CREATE_TABLE_CLIENTE="""
 CREATE TABLE IF NOT EXISTS Cliente (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
-    CPF TEXT NOT NULL UNIQUE,
+    cpf TEXT NOT NULL UNIQUE,
     telefone TEXT NOT NULL UNIQUE,
     email TEXT NOT NULL UNIQUE,
     data_nascimento TEXT NOT NULL);
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Cliente (
 
 INSERT_CLIENTE="""
 INSERT INTO Cliente (nome, cpf, telefone, email, data_nascimento)
-VAKUES (?, ?, ?, ?, ?);
+VAlUES (?, ?, ?, ?, ?);
 """
 
 UPDATE_CLIENTE="""
