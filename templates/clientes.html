@@ -4,12 +4,21 @@
 <table class="table table-striped align-middle">
     <thead>
         <tr>
+<<<<<<< HEAD
             <th>id</th>
             <th>nome</th>
             <th>cpf</th>
             <th>email</th>
             <th>telefone</th>
             <th>Data_nascimento</th>
+=======
+            <th>Id</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Data Nasc.</th>
+>>>>>>> 2d8574edd549b6a18f8d475450efcf42a8579ce9
         </tr>
     </thead>
     <tbody>
@@ -20,7 +29,11 @@
             <td>{{ cliente.cpf }}</td>
             <td>{{ cliente.email }}</td>
             <td>{{ cliente.telefone }}</td>
+<<<<<<< HEAD
             <td>{{ cliente.data_nascimento.strftime("%d/%m/%Y") }}</td>
+=======
+            <td>{{ cliente.data_nascimento.strftime('%d/%m/%Y') }}</td>
+>>>>>>> 2d8574edd549b6a18f8d475450efcf42a8579ce9
         </tr>
         {% endfor %}
     </tbody>

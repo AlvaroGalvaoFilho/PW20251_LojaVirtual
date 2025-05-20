@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 from data.database import obter_conexao
 from sql.cliente_sql import *
 from models.cliente import Cliente
 from datetime import datetime
 
+=======
+import datetime
+from data.database import obter_conexao
+from sql.cliente_sql import *
+from models.cliente import Cliente
+>>>>>>> 2d8574edd549b6a18f8d475450efcf42a8579ce9
 
 def criar_tabela_clientes():
     """Cria a tabela Cliente se ela não existir."""
@@ -55,9 +62,14 @@ def obter_cliente_por_id(id: int) -> Cliente:
             nome=resultado[1],
             cpf=resultado[2],
             telefone=resultado[3],
+<<<<<<< HEAD
             email=resultado[4],
             data_nascimento=datetime.strptime(resultado[5], "%Y-%m-%d").date()
         )
+=======
+            email=resultado[4],            
+            data_nascimento=datetime.datetime.strptime(resultado[5], "%Y-%m-%d").date())
+>>>>>>> 2d8574edd549b6a18f8d475450efcf42a8579ce9
     return None
 
 def obter_clientes_por_pagina(limite: int, offset: int) -> list[Cliente]:
@@ -73,5 +85,10 @@ def obter_clientes_por_pagina(limite: int, offset: int) -> list[Cliente]:
         cpf=resultado[2],
         telefone=resultado[3],
         email=resultado[4],
+<<<<<<< HEAD
         data_nascimento=datetime.strptime(resultado[5], "%Y-%m-%d").date())
     for resultado in resultados]
+=======
+        data_nascimento=datetime.datetime.strptime(resultado[5], "%Y-%m-%d").date()
+    ) for resultado in resultados]
+>>>>>>> 2d8574edd549b6a18f8d475450efcf42a8579ce9
