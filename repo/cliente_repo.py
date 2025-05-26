@@ -2,10 +2,6 @@ from data.database import obter_conexao
 from sql.cliente_sql import *
 from models.cliente import Cliente
 from datetime import datetime
-import datetime
-from data.database import obter_conexao
-from sql.cliente_sql import *
-from models.cliente import Cliente
 
 
 def criar_tabela_clientes():
