@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 --comando INSERT para inserir dez clientes na tabela clientes contendo nome, cpf, email, telefone e data_nascimento--
 
 INSERT INTO clientes (nome, cpf, email, telefone, data_nascimento) VALUES
@@ -14,7 +13,7 @@ INSERT INTO clientes (nome, cpf, email, telefone, data_nascimento) VALUES
 ('Patrícia Rocha', '357.159.486-00', 'patriciarocha@gmail.com', '11987654330', '1994-06-06');
 
 --comando INSERT para inserir dez clientes na tabela clientes contendo nome, cpf, email, telefone e data_nascimento--
-=======
+
 -- Comando INSERT para inserir 10 clientes na tabela clientes contendo nome, cpf, email, telefone e data_nascimento
 INSERT INTO clientes (nome, cpf, email, telefone, data_nascimento) VALUES
 ('João Silva', '123.456.789-00', 'joaosilva@email.com', '11987654321', '1990-01-01'),
@@ -27,4 +26,4 @@ INSERT INTO clientes (nome, cpf, email, telefone, data_nascimento) VALUES
 ('Juliana Martins', '753.159.486-00', 'julianamartins@email.com', '11987654328', '1991-04-04'),
 ('Ricardo Ferreira', '951.753.486-00', 'ricardoferreira@email.com', '11987654329', '1989-08-08'),
 ('Patrícia Rocha', '357.159.486-00', 'patriciarocha@email.com', '11987654330', '1994-06-06');
->>>>>>> 2d8574edd549b6a18f8d475450efcf42a8579ce9
+
